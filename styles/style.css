@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.yellow {
+  color: #edf02d;
+}
+
+h1 {
+  color: white;
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  font-size: clamp(2rem, 8vw, 3rem);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 0;
+  padding: 1.5rem 2rem;
+  font-family: "Oswald", sans-serif;
+  background-image: url(../background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #0000007b;
+}
+
+.btn-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 100;
+}
+
+.btn-section div {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9dafb8;
+  outline: 3px solid;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+.btn-section div kbd {
+  font-family: inherit;
+  font-size: 2rem;
+  color: #edf02d;
+}
+
+.btn-section .btn-actv {
+  -webkit-transform: translateY(-10px) scale(1.05);
+          transform: translateY(-10px) scale(1.05);
+  -webkit-box-shadow: rgba(237, 240, 45, 0.4) 0px 5px, rgba(237, 240, 45, 0.3) 0px 10px, rgba(237, 240, 45, 0.2) 0px 15px, rgba(237, 240, 45, 0.1) 0px 20px, rgba(237, 240, 45, 0.05) 0px 25px;
+          box-shadow: rgba(237, 240, 45, 0.4) 0px 5px, rgba(237, 240, 45, 0.3) 0px 10px, rgba(237, 240, 45, 0.2) 0px 15px, rgba(237, 240, 45, 0.1) 0px 20px, rgba(237, 240, 45, 0.05) 0px 25px;
+  color: white;
+}
+
+.btn-section .btn-actv kbd {
+  text-shadow: #edf02d 0 0 24px;
+}
+/*# sourceMappingURL=style.css.map */
